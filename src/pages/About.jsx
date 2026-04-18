@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import aboutperson from '../assets/aboutperson.jpg'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -45,13 +46,13 @@ export default function About() {
 
       {/* Hero Header */}
       <motion.div
-        className="bg-gradient-to-r from-deepmaroon to-maroon py-16 px-6 text-center"
+        className="bg-[url('../assets/about-bg.jpg')] bg-cover bg-center py-16 px-6 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         <motion.p
-          className="font-heading text-xs tracking-[0.3em] text-gold mb-2"
+          className="font-heading text-sm tracking-[0.3em] text-pink-700 mb-2"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
@@ -59,12 +60,12 @@ export default function About() {
           OUR STORY
         </motion.p>
         <motion.h1
-          className="font-display text-3xl md:text-5xl text-cream mb-4"
+          className="font-display font-bold text-3xl md:text-5xl text-cream mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.7 }}
         >
-          About Samarth Murti
+          About Samarth Divine
         </motion.h1>
         <motion.p
           className="font-body italic text-cream/60 text-lg max-w-xl mx-auto"
@@ -79,7 +80,7 @@ export default function About() {
       {/* Story Section */}
       <section className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
         <motion.div
-          className="relative rounded-lg overflow-hidden shadow-xl aspect-square bg-gradient-to-br from-maroon/20 to-gold/20 flex items-center justify-center border border-gold/20"
+          className="relative rounded-lg overflow-hidden shadow-xl aspect-square bg-[url(../assets/aboutperson.jpg)]  bg-cover bg-center  flex items-center justify-center border border-gold/20"
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -91,9 +92,9 @@ export default function About() {
               animate={{ scale: [1, 1.05, 1] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             >
-              🪔
+              
             </motion.p>
-            <p className="font-heading text-sm tracking-widest text-maroon">EST. 2008</p>
+           
           </div>
           <div className="absolute top-3 left-3 w-10 h-10 border-t-2 border-l-2 border-gold/40" />
           <div className="absolute top-3 right-3 w-10 h-10 border-t-2 border-r-2 border-gold/40" />
@@ -107,17 +108,18 @@ export default function About() {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <motion.p variants={fadeUp} className="font-heading text-xs tracking-[0.25em] text-gold mb-3">
+          <motion.p variants={fadeUp} className="font-heading text-sm font-bold  tracking-[0.25em] text-zinc-800  mb-3">
             WHO WE ARE
           </motion.p>
-          <motion.h2 variants={fadeUp} className="font-body text-3xl text-maroon mb-5 leading-snug">
-            A Family of Devoted Artisans from Jabalpur
+          <motion.h2 variants={fadeUp} className="font-body font-bold text-3xl text-maroon mb-5 leading-snug">
+            A Family of Devoted Artisans from Chitrakoot
           </motion.h2>
           <div className="flex flex-col gap-4 font-body text-brown/70 leading-relaxed">
             {[
-              "Samarth Murti was born in 2008 in the heart of Jabalpur, Madhya Pradesh — a city known for its deep spiritual roots and artistic heritage. What started as a small workshop by master craftsman Ramesh Sharma has grown into a beloved brand trusted by devotees across India.",
-              "We believe that a murti is not just a decorative item — it is a living presence of the divine in your home. That belief drives every chisel stroke, every brushstroke, and every prayer that goes into our work.",
-              "From hand-painted clay idols to polished brass sculptures, each piece carries the soul of traditional Indian artisanship, blended with love and devotion of our artisan families.",
+              "Samarth Divine was established in 2008 in the spiritually sacred town of Chitrakoot — a place known for its deep connection with Lord Rama and timeless devotion.",
+              "What began as a small traditional workshop by the Bauriya family, led by master craftsman Ramesh Sharma, has grown into a trusted name for handcrafted divine idols cherished by devotees across India.",
+              "From hand-painted clay idols to finely finished brass sculptures, every creation reflects the essence of traditional Indian artistry. Each piece is carefully crafted by skilled artisans of the Bauriya family, carrying forward generations of devotion, culture, and craftsmanship.",
+              "At Samarth Divine, every murti is not just made — it is created with devotion, preserved with tradition, and delivered with faith. 🕉️"
             ].map((text, i) => (
               <motion.p key={i} variants={fadeUp}>{text}</motion.p>
             ))}
@@ -236,7 +238,7 @@ export default function About() {
       <section className="py-20 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
           <motion.div
-            className="text-center mb-12"
+            className="text-center mb-12 "
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
