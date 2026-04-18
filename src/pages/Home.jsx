@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 import ProductCard from "../components/product/ProductCard";
 import { products } from "../data/products";
 import Testimonials from "../components/Testinomals/Testimonial";
-
+import {  Phone, CheckCircle } from "lucide-react";
 const featured = products
   .filter((p) => p.tags?.includes("bestseller"))
   .slice(0, 4);
@@ -181,9 +181,9 @@ export default function Home() {
           <h2 className="text-5xl font-bold text-maroon mb-4">
             Our Work
           </h2>
-    <p className="text-zinc-600 max-w-2xl mx-auto mb-12">
-  Explore our collection of handcrafted murtis, created with precision, devotion, and artistic excellence to bring divine beauty into every space.
-</p>
+          <p className="text-zinc-600 max-w-2xl mx-auto mb-12">
+            Explore our collection of handcrafted murtis, created with precision, devotion, and artistic excellence to bring divine beauty into every space.
+          </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featured.map((p) => (
@@ -199,9 +199,14 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Testimonials/>
 
-  
+      {/* testimonial */}
+      <Testimonials />
+
+     
     </>
+
+
+
   );
 }
