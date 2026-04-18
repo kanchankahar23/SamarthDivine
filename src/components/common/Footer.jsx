@@ -14,7 +14,7 @@ const fadeUp = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-deepmaroon to-brown text-cream">
+    <footer className="bg-blue-950 text-cream">
       <motion.div
         className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
         variants={stagger}
@@ -23,13 +23,29 @@ export default function Footer() {
         viewport={{ once: true }}
       >
         {/* Brand */}
-        <motion.div variants={fadeUp}>
-          <h3 className="font-display text-lg text-gold mb-3">🪔 Samarth Murti</h3>
-          <p className="font-body text-sm text-cream/70 leading-relaxed">
-            Bringing divine blessings to your home through authentic handcrafted idols.
-          </p>
-        </motion.div>
+       <motion.div
+            whileHover={{ scale: 1.03 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="flex items-center gap-3 cursor-pointer"
+          >
+            {/* Icon */}
+            <div className="w-12 h-12 bg-maroon flex items-center justify-center rounded-md shadow-md">
+              <span className="text-lg text-white"><Handshake/></span>
+            </div>
 
+            {/* Text */}
+            <div className="leading-tight">
+              <p
+                className={`font-display text-2xl font-bold tracking-wide ${scrolled ? "text-maroon" : "text-white"
+                  }`}
+              >
+                Samarth Divine
+              </p>
+              <p className="font-body italic text-xs font-bold text-gold tracking-widest">
+                Divine Handcrafted Idols
+              </p>
+            </div>
+          </motion.div>
         {/* Quick Links */}
         <motion.div variants={fadeUp}>
           <h4 className="font-heading text-xs tracking-widest text-gold mb-4">QUICK LINKS</h4>

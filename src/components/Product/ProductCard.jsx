@@ -85,8 +85,8 @@ export default function ProductCard({ product }) {
 
         {/* Info */}
         <div className="p-4 flex flex-col gap-1.5 flex-1">
-          <p className="font-heading text-[10px] tracking-widest text-gold">{product.category.toUpperCase()}</p>
-          <h3 className="font-body text-lg text-brown leading-snug">{product.name}</h3>
+          <p className="font-medium text-[14px] tracking-widest text-gold">{product.category.toUpperCase()}</p>
+          <h3 className="font-body text-lg font-bold text-maroon leading-snug">{product.name}</h3>
           <p className="text-xs text-brown/60 font-body">{product.material} · {product.height}</p>
 
           <div className="flex items-center gap-1.5">
@@ -108,9 +108,9 @@ export default function ProductCard({ product }) {
             disabled={!product.inStock}
             whileTap={product.inStock ? { scale: 0.96 } : {}}
             whileHover={product.inStock ? { brightness: 1.1 } : {}}
-            className={`mt-2 w-full py-2 rounded font-heading text-xs tracking-widest text-white transition-colors duration-300
+            className={`mt-2 w-full py-2 rounded font-medium text-xs tracking-widest text-white transition-colors duration-300
               ${added ? "bg-green-700" : product.inStock
-                ? "bg-gradient-to-r from-saffron to-gold"
+                ? "bg-[#FF0066]"
                 : "bg-gray-300 cursor-not-allowed"}`}
           >
             {added ? "✓ ADDED TO CART" : product.inStock ? "ADD TO CART" : "OUT OF STOCK"}
