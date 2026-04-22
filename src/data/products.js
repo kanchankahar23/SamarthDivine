@@ -31,7 +31,7 @@ export const products = [
     rating: 4.9,
     reviews: 89,
     inStock: true,
-    image: dungaImg,
+    image: durgaImg,
     description: "Goddess Lakshmi in radiant golden hue, a symbol of prosperity and abundance.",
     tags: ["bestseller", "new"],
   },
