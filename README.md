@@ -104,7 +104,7 @@ npm run build
 ![Products](./screenshot/product.png)
 
 ### Why Samar Divine
-![WhySamar](./screenshots/whysamar.png)
+![WhySamar](./screenshot/whysamar.png)
 
 ---
 
