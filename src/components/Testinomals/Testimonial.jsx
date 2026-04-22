@@ -5,25 +5,25 @@ const testimonials = [
   {
     name: "Ravi Sharma",
     location: "Delhi, India",
-    text: "Mahakal Tours made my Ujjain trip unforgettable. The spiritual vibes and well-planned itinerary were beyond expectations.",
+    text: "The Ganesh murti I ordered from Samarth Divine is breathtaking. The craftsmanship and detailing are extraordinary — it feels like a divine presence in my home.",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
-    name: "Meera Patel",
+    name: "Karan Patel",
     location: "Ahmedabad, India",
-    text: "I felt safe and spiritually enriched. The guides were knowledgeable, and the experience was deeply personal.",
+    text: "I gifted a Laxmi murti to my mother on Diwali. She was moved to tears by its beauty. Samarth Divine truly pours devotion into every creation.",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
-    name: "Arjun Verma",
+    name: "Diya Verma",
     location: "Lucknow, India",
-    text: "The best pilgrimage journey I’ve ever had. The attention to detail and hospitality were top-notch.",
+    text: "The Shiva idol arrived perfectly packaged and the finish is immaculate. You can feel the spiritual energy radiating from it. Truly divine craftsmanship",
     image: "https://randomuser.me/api/portraits/men/65.jpg",
   },
   {
-    name: "Kavya Menon",
+    name: "Kajal tiwade",
     location: "Kerala, India",
-    text: "From the Ganga Aarti to the Jyotirlinga darshan, Mahakal Tours curated an incredible spiritual retreat.",
+    text: "Our pooja ghar feels complete now. The Saraswati murti is carved with such devotion and precision. Samarth Divine is our go-to for all sacred murtis",
     image: "https://randomuser.me/api/portraits/women/52.jpg",
   },
 ];
