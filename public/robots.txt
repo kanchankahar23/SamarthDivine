@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samar-divine.vercel.app/sitemap.xml

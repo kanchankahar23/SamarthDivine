@@ -58,6 +58,7 @@ export default function ProductDetail() {
           <motion.div
             className="relative rounded-lg overflow-hidden shadow-xl aspect-[4/5]"
             initial={{ opacity: 0, x: -50 }}
+            style={{fontFamily:"sans-serif"}}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
@@ -74,12 +75,13 @@ export default function ProductDetail() {
             className="flex flex-col gap-4"
             variants={stagger}
             initial="hidden"
+              style={{fontFamily:"sans-serif"}}
             animate="show"
           >
-            <motion.p variants={fadeUp} className="font-heading text-xs tracking-[0.2em] text-gold">
+            <motion.p variants={fadeUp} className="font-heading text-xs font-semibold  tracking-[0.2em] text-gold">
               {product.category.toUpperCase()}
             </motion.p>
-            <motion.h1 variants={fadeUp} className="font-body text-3xl text-brown leading-snug">
+            <motion.h1   style={{fontFamily:"sans-serif"}} variants={fadeUp} className="font-body text-4xl font-bold text-brown leading-snug">
               {product.name}
             </motion.h1>
 
@@ -106,8 +108,8 @@ export default function ProductDetail() {
                 { label: "Category", value: product.category },
                 { label: "Availability", value: product.inStock ? "In Stock ✅" : "Out of Stock ❌" },
               ].map(({ label, value }) => (
-                <div key={label} className="bg-white rounded p-3 border border-gold/15">
-                  <p className="font-heading text-[10px] tracking-widest text-gold mb-1">{label.toUpperCase()}</p>
+                <div key={label}   style={{fontFamily:"sans-serif"}} className="bg-white rounded p-3 border border-gold/15">
+                  <p  className="font-heading text-[10px] tracking-widest font-semibold text-amber-500 mb-1">{label.toUpperCase()}</p>
                   <p className="font-body text-sm text-brown">{value}</p>
                 </div>
               ))}

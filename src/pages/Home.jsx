@@ -6,6 +6,8 @@ import ProductCard from "../components/product/ProductCard";
 import { products } from "../data/products";
 import Testimonials from "../components/Testinomals/Testimonial";
 import {  Phone, CheckCircle } from "lucide-react";
+import SEO from '../components/SEO'
+
 const featured = products
   .filter((p) => p.tags?.includes("bestseller"))
   .slice(0, 4);
@@ -72,6 +74,12 @@ export default function Home() {
 
   return (
     <>
+
+        <SEO
+      title="Handcrafted Divine Murtis & Idols"
+      description="Buy authentic handcrafted Hindu murtis online — Ganesha, Ram, Krishna, Durga and more. Free delivery across India."
+      url="/"
+    />
       {/* HERO */}
       <section className="min-h-screen bg-[url('../assets/bg.jpg')] bg-cover bg-center flex items-center justify-center text-center px-6 pt-24 pb-16 relative">
         <div className="absolute inset-0 bg-black/30"></div>

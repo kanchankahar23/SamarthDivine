@@ -21,9 +21,9 @@ const stats = [
 ];
 
 const team = [
-  { name: "Shaligram Bauriya", role: "Master Craftsman", exp: "20 years experience" },
+  { name: "Saligram Bauriya", role: "Master Craftsman", exp: "20 years experience" },
   { name: "Shaurya Bauriya", role: "Clay & Color Artist", exp: "5 years experience" },
-  { name: "Samar Bauriya", role: "Brass & Metal Work", exp: "8 years experience" },
+  { name: "Swapnil Bauriya", role: "Brass & Metal Work", exp: "8 years experience" },
 ];
 
 const values = [
