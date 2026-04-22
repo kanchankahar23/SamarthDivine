@@ -27,39 +27,41 @@ export default function Contact() {
   return (
     <div className="pt-24 min-h-screen bg-cream">
       {/* Header */}
+      {/* Header */}
       <motion.div
-        className="bg-gradient-to-r from-deepmaroon to-maroon py-14 px-6 text-center mb-12"
+        className="bg-[url('../assets/product.jpg')] bg-cover bg-center py-16 px-6 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        transition={{ duration: 0.8 }}
       >
-        <motion.p
-          className="font-heading text-xs tracking-[0.3em] text-gold mb-2"
-          initial={{ opacity: 0, y: -15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-        >
-          GET IN TOUCH
-        </motion.p>
+    
         <motion.h1
-          className="font-display text-3xl md:text-4xl text-cream"
+          className="font-display font-bold text-3xl md:text-5xl text-cream mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35 }}
+          transition={{ delay: 0.35, duration: 0.7 }}
         >
-          Contact Us
+          Contect Us
         </motion.h1>
+        <motion.p
+          className="font-body italic text-cream/60 text-lg max-w-xl mx-auto"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.6 }}
+        >
+          Crafting divine connections between devotees and the sacred since 2008
+        </motion.p>
       </motion.div>
-
-      <div className="max-w-5xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div style={{fontFamily:'sans-serif'}} className="max-w-5xl mx-auto px-6 pb-20 grid grid-cols-1 md:grid-cols-2 mt-15 gap-12">
         {/* Info */}
         <motion.div
           variants={stagger}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
+
         >
-          <motion.h2 variants={fadeUp} className="font-heading text-2xl text-maroon mb-4">
+          <motion.h2 variants={fadeUp} style={{fontFamily:'sans-serif'}} className="font-heading text-3xl font-bold text-maroon mb-4">
             We'd Love to Hear From You
           </motion.h2>
           <motion.p variants={fadeUp} className="font-body text-brown/70 mb-8 leading-relaxed">
@@ -92,10 +94,11 @@ export default function Contact() {
 
         {/* Form */}
         <motion.div
-          className="bg-white rounded-lg p-8 shadow-sm border border-gold/15"
+          className="bg-white rounded-lg p-8  shadow-sm border border-gold/15"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           {submitted ? (
@@ -103,6 +106,7 @@ export default function Contact() {
               className="text-center py-12"
               initial={{ opacity: 0, scale: 0.85 }}
               animate={{ opacity: 1, scale: 1 }}
+              
               transition={{ duration: 0.5, type: "spring" }}
             >
               <motion.p
@@ -112,7 +116,7 @@ export default function Contact() {
               >
                 🙏
               </motion.p>
-              <h3 className="font-heading text-xl text-maroon mb-2">Thank You!</h3>
+              <h3 className="font-heading text-xl font-bold text-maroon mb-2">Thank You!</h3>
               <p className="font-body italic text-brown/60">We'll get back to you within 24 hours.</p>
             </motion.div>
           ) : (
@@ -122,8 +126,13 @@ export default function Contact() {
               variants={stagger}
               initial="hidden"
               animate="show"
+          style={{fontFamily:'sans-serif'}}
+
             >
-              <motion.h3 variants={fadeUp} className="font-heading text-lg text-maroon mb-2">
+              <motion.h3 
+          style={{fontFamily:'sans-serif'}}
+              
+              variants={fadeUp} className="font-heading text-xl font-bold text-maroon mb-2">
                 Send a Message
               </motion.h3>
 
@@ -133,7 +142,10 @@ export default function Contact() {
                 { name: "phone", label: "Phone", type: "tel", placeholder: "+91 XXXXX XXXXX" },
               ].map(({ name, label, type, placeholder }) => (
                 <motion.div key={name} variants={fadeUp}>
-                  <label className="font-heading text-[10px] tracking-widest text-gold block mb-1">
+                  <label 
+          style={{fontFamily:'sans-serif'}}
+
+                   className="font-heading text-[10px] tracking-widest text-gold font-bold block mb-1">
                     {label.toUpperCase()}
                   </label>
                   <input
