@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import aboutperson from '../assets/aboutperson.jpg'
-import artist from '../assets/artist.jpeg'
+import artist2 from '../assets/artist.jpeg'
+import artist1 from "../assets/artist1.jpeg"
+import artist3 from "../assets/artist3.jpeg";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -21,9 +23,9 @@ const stats = [
 ];
 
 const team = [
-  { name: "Saligram Bauriya", role: "Master Craftsman", exp: "20 years experience" },
-  { name: "Shaurya Bauriya", role: "Clay & Color Artist", exp: "5 years experience" },
-  { name: "Swapnil Bauriya", role: "Brass & Metal Work", exp: "8 years experience" },
+  { name: "Saligram Bauriya", role: "Master Craftsman", exp: "20 years experience",artisan:artist1 },
+  { name: "Shaurya Bauriya", role: "Clay & Color Artist", exp: "5 years experience", artisan:artist2},
+  { name: "Swapnil Bauriya", role: "Brass & Metal Work", exp: "8 years experience",artisan:artist3 },
 ];
 
 const values = [
@@ -246,7 +248,7 @@ export default function About() {
             style={{ fontFamily: "sans-serif" }}
             viewport={{ once: true }}
           >
-            {team.map(({ name, role, exp }) => (
+            {team.map(({ name, role, exp,artisan }) => (
               <motion.div
                 key={name}
                             style={{ fontFamily: "sans-serif" }}
@@ -260,7 +262,7 @@ export default function About() {
   whileHover={{ scale: 1.1, rotate: 3 }}
   transition={{ type: "spring", stiffness: 250 }}
 >
-  <img src={artist} alt="Artist" className="w-full h-full object-cover" />
+  <img src={artisan} alt="Artist" className="w-full h-full object-cover" />
 </motion.div >
                 <h3 className="font-heading text-2xl font-semibold text-maroon mb-1">{name}</h3>
                 <p className="font-body italic text-gold text-sm mb-1">{role}</p>
