@@ -48,7 +48,7 @@ export default function Navbar() {
                 className={`font-display text-2xl font-bold tracking-wide ${scrolled ? "text-maroon" : "text-white"
                   }`}
               >
-                Samarth Divine
+                Samar Divine
               </p>
               <p className="font-body italic text-xs font-bold text-gold tracking-widest">
                 Divine Handcrafted Idols

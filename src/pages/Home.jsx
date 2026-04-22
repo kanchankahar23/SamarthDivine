@@ -111,7 +111,7 @@ export default function Home() {
       <section className="py-14 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center mt-10">
           <h2 className="text-5xl font-bold text-maroon mb-4">
-            Why Samarth Divine?
+            Why Samar Divine?
           </h2>
 
           <p className="text-zinc-600 max-w-2xl mx-auto mb-12">

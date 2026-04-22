@@ -65,7 +65,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35, duration: 0.7 }}
         >
-          About Samarth Divine
+          About Samar Divine
         </motion.h1>
         <motion.p
           className="font-body italic text-cream/60 text-lg max-w-xl mx-auto"
@@ -116,10 +116,10 @@ export default function About() {
           </motion.h2>
           <div className="flex flex-col gap-4 font-body text-brown/70 leading-relaxed">
             {[
-              "Samarth Divine was established in 2008 in the spiritually sacred town of Chitrakoot — a place known for its deep connection with Lord Rama and timeless devotion.",
+              "Samar Divine was established in 2008 in the spiritually sacred town of Chitrakoot — a place known for its deep connection with Lord Rama and timeless devotion.",
               "What began as a small traditional workshop by the Bauriya family, led by master craftsman Ramesh Sharma, has grown into a trusted name for handcrafted divine idols cherished by devotees across India.",
               "From hand-painted clay idols to finely finished brass sculptures, every creation reflects the essence of traditional Indian artistry. Each piece is carefully crafted by skilled artisans of the Bauriya family, carrying forward generations of devotion, culture, and craftsmanship.",
-              "At Samarth Divine, every murti is not just made — it is created with devotion, preserved with tradition, and delivered with faith. 🕉️"
+              "At Samar Divine, every murti is not just made — it is created with devotion, preserved with tradition, and delivered with faith. 🕉️"
             ].map((text, i) => (
               <motion.p key={i} variants={fadeUp}>{text}</motion.p>
             ))}

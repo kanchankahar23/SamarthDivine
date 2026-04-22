@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Text */}
           <div className="leading-tight">
             <p className="font-display text-2xl font-bold tracking-wide text-white">
-              Samarth Divine
+              Samar Divine
             </p>
             <p className="font-body italic text-xs font-bold text-gold tracking-widest">
               Divine Handcrafted Idols
