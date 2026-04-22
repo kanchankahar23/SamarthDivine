@@ -97,7 +97,14 @@ npm run build
 
 ## 📸 Screenshots
 
-> _Add screenshots of the homepage, product section, and mobile view here._
+### 🏠 Home Page
+![Home](./screenshot/home.png)
+
+### 🛍️ Product Section
+![Products](./screenshot/product.png)
+
+### Why Samar Divine
+![WhySamar](./screenshots/whysamar.png)
 
 ---
 
