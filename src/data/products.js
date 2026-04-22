@@ -1,3 +1,9 @@
+import ganeshImg from "../assets/ganeshji.webp"; 
+import durgaImg from "../assets/durgaji.webp";
+import hanumanImg from "../assets/hanumanji.webp";
+import krishnaImg from "../assets/krishna.webp";
+import shivImg from "../assets/shiv.webp"
+
 export const products = [
   {
     id: 1,
@@ -10,7 +16,7 @@ export const products = [
     rating: 4.8,
     reviews: 124,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Ganesh+Ji",
+    image: ganeshImg,
     description: "Handcrafted Ganesh Ji idol with pristine marble-effect finish. Perfect for home temples, offices, and gifting on auspicious occasions.",
     tags: ["bestseller", "popular"],
   },
@@ -25,7 +31,7 @@ export const products = [
     rating: 4.9,
     reviews: 89,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Lakshmi+Ji",
+    image: dungaImg,
     description: "Goddess Lakshmi in radiant golden hue, a symbol of prosperity and abundance.",
     tags: ["bestseller", "new"],
   },
@@ -40,7 +46,7 @@ export const products = [
     rating: 4.7,
     reviews: 203,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Shiva+Lingam",
+    image: shivImg,
     description: "Authentic Narmada Shiva Lingam sourced ethically, polished to a lustrous finish.",
     tags: ["popular"],
   },
@@ -55,7 +61,7 @@ export const products = [
     rating: 4.9,
     reviews: 67,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Radha+Krishna",
+    image: krishnaImg,
     description: "Exquisite Radha-Krishna pair in antique brass finish, capturing divine love.",
     tags: ["premium", "new"],
   },
@@ -70,7 +76,7 @@ export const products = [
     rating: 4.8,
     reviews: 145,
     inStock: false,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Hanuman+Ji",
+    image: hanumanImg,
     description: "Majestic standing Hanuman Ji in devotional posture, hand-painted with gold accents.",
     tags: ["popular"],
   },
@@ -85,7 +91,7 @@ export const products = [
     rating: 4.6,
     reviews: 52,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Saraswati+Ji",
+    image: durgaImg,
     description: "Goddess Saraswati in pristine white with intricate veena and swan details.",
     tags: ["new"],
   },
@@ -100,7 +106,7 @@ export const products = [
     rating: 4.9,
     reviews: 38,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Durga+Mata",
+    image: durgaImg,
     description: "Eco-friendly clay Durga Mata idol with vibrant natural colors.",
     tags: ["premium", "popular"],
   },
@@ -115,7 +121,7 @@ export const products = [
     rating: 4.7,
     reviews: 178,
     inStock: true,
-    image: "https://placehold.co/400x500/f5e6c8/7a1c1c?text=Bal+Gopal",
+    image: krishnaImg,
     description: "Adorable Bal Gopal stealing butter, with joyful expression and bright enamel colors.",
     tags: ["bestseller"],
   },
