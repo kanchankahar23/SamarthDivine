@@ -20,7 +20,8 @@ export default function ProductFilter({ selectedCategory, setSelectedCategory, s
             transition={{ delay: i * 0.05 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`px-4 py-1.5 rounded-full text-xs font-heading tracking-wider border transition-all duration-200
+            style={{fontFamily:"sans-serif"}}
+            className={`px-4 py-1.5 rounded-full text-sm font-semibold font-heading tracking-wider border transition-all duration-200
               ${selectedCategory === cat
                 ? "bg-maroon text-cream border-maroon"
                 : "bg-transparent text-brown border-gold/30 hover:border-maroon hover:text-maroon"
@@ -43,7 +44,7 @@ export default function ProductFilter({ selectedCategory, setSelectedCategory, s
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value)}
-          className="font-heading text-xs text-brown bg-cream border border-gold/30 rounded px-3 py-1.5 outline-none cursor-pointer"
+          className="font-heading text-sm text-brown bg-cream border border-gold/30 rounded px-3 py-1.5 outline-none cursor-pointer"
         >
           <option value="default">Sort By</option>
           <option value="price-asc">Price: Low to High</option>
