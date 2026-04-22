@@ -70,10 +70,10 @@ export default function Contact() {
 
           <div className="flex flex-col gap-5">
             {[
-              { icon: "📍", label: "Address", value: "123 Temple Street, Jabalpur, MP — 482001" },
-              { icon: "📞", label: "Phone", value: "+91 98765 43210" },
-              { icon: "✉️", label: "Email", value: "info@samarmurti.com" },
-              { icon: "🕐", label: "Hours", value: "Monday – Saturday: 9 AM to 7 PM" },
+              { icon: "📍", label: "Address", value: " Kachchi Chawani Taraunha Road , Karwi ,Chitrakoot Uttar Pradesh" },
+              { icon: "📞", label: "Phone", value: " +91 93354 56799" },
+              { icon: "✉️", label: "Email", value: "info@samardivine.com" },
+             
             ].map(({ icon, label, value }) => (
               <motion.div
                 key={label}
