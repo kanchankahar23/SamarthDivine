@@ -45,11 +45,11 @@ const process = [
 
 export default function About() {
   return (
-    <div className="pt-24 min-h-screen bg-cream">
+    <div className=" min-h-screen bg-cream">
 
       {/* Hero Header */}
       <motion.div
-        className="bg-[url('../assets/about-bg.jpg')] bg-cover bg-center py-16 px-6 text-center"
+        className="bg-[url('../assets/about-bg.jpg')] bg-cover bg-center py-32 px-6 text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
