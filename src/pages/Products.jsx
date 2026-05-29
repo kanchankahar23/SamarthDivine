@@ -18,10 +18,10 @@ export default function Products() {
   }, [searchParams]);
 
   return (
-    <div className="pt-24 min-h-screen bg-cream">
+    <div className=" min-h-screen bg-cream">
       {/* Header */}
         <motion.div
-            className="bg-[url('../assets/product.jpg')] bg-cover bg-center py-16 px-6 text-center"
+            className="bg-[url('../assets/product.jpg')] bg-cover bg-center py-32 px-6 text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
