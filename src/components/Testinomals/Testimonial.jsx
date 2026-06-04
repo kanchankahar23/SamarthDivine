@@ -42,21 +42,16 @@ const fadeUp = {
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-rose-50">
+    <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-center text-maroon mb-12"
-        >
-          What Our{" "}
-            Customer Say
-      
-        </motion.h2>
+        <h2 className="text-5xl text-center font-bold text-maroon mb-4">
+          Our Customer
+        </h2>
+        <p className="text-zinc-600 text-center max-w-2xl mx-auto mb-12">
+           Our customers' trust and satisfaction inspire us to create beautiful handcrafted murtis that reflect devotion, culture, and timeless craftsmanship.
 
+        </p>
         {/* Cards */}
         <div className="flex overflow-x-auto space-x-6 px-2 scrollbar-thin scrollbar-thumb-pink-500">
 
